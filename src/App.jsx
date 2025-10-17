@@ -11,11 +11,13 @@ import OwnerDashboard from './pages/owner/OwnerDashboard';
 import OwnerSmartPricing from './pages/owner/OwnerSmartPricing';
 import OwnerAnalytics from './pages/owner/OwnerAnalytics';
 import OwnerPolicies from './pages/owner/OwnerPolicies';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <ScrollToTop />
         <Navbar />
         <main className="flex-grow">
           <AnimatePresence mode="wait">
