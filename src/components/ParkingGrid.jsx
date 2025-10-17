@@ -6,7 +6,7 @@ const ParkingGrid = ({ spots, onSelectSpot, selectedSpotId }) => {
   const getSpotColor = (status) => {
     switch (status) {
       case 'occupied':
-        return 'bg-red-500';
+        return 'bg-[#FF0000]';
       case 'suggested':
         return 'bg-yellow-500';
       case 'vacant':
@@ -19,7 +19,7 @@ const ParkingGrid = ({ spots, onSelectSpot, selectedSpotId }) => {
   const getSpotBorderColor = (status) => {
     switch (status) {
       case 'occupied':
-        return 'border-red-600';
+        return 'border-red-800';
       case 'suggested':
         return 'border-yellow-600';
       case 'vacant':
@@ -34,7 +34,7 @@ const ParkingGrid = ({ spots, onSelectSpot, selectedSpotId }) => {
       {/* Legend */}
       <div className="flex flex-wrap gap-4 mb-6 justify-center">
         <div className="flex items-center space-x-2">
-          <div className="w-4 h-4 bg-red-500 rounded"></div>
+          <div className="w-4 h-4 bg-[#FF0000] rounded"></div>
           <span className="text-sm text-gray-700">Occupied</span>
         </div>
         <div className="flex items-center space-x-2">
